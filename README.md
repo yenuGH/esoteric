@@ -3,6 +3,7 @@
 <a href="https://github.com/null2264/yokai">
     <img src="./.github/readme-images/app-icon.webp" alt="Yokai logo" height="200px" width="200px" />
 </a>
+yeah the logo is ai generated but i suck at art if anyone wants to help then lmk
 
 # Esoteric
 
