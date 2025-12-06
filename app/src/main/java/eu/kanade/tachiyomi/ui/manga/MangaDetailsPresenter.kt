@@ -960,6 +960,11 @@ class MangaDetailsPresenter(
         }.map { service ->
             TrackItem(tracks.find { it.sync_id == service.id }, service)
         }
+
+        trackList.filter { it.track != null }.forEach { trackItem ->
+            syncChaptersWithTracker(trackItem, chapters)
+        }
+        presenterScope.launch { withUIContext { view?.updateChapters() } }
     }
 
     suspend fun fetchTracks() {
@@ -1100,6 +1105,15 @@ class MangaDetailsPresenter(
         val track = item.track!!
         track.finished_reading_date = date
         updateRemote(track, item.service)
+    }
+
+    fun syncChaptersWithTracker(item: TrackItem, chapters: List<ChapterItem>) {
+        val track = item.track!!
+        chapters.forEach { chapter ->
+            if (chapter.chapter_number < track.last_chapter_read) {
+                chapter.read = true
+            }
+        }
     }
 
     suspend fun getSuggestedDate(readingDate: TrackingBottomSheet.ReadingDate): Long? {
