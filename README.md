@@ -4,7 +4,7 @@
     <img src="./.github/readme-images/app-icon.webp" alt="Yokai logo" height="200px" width="200px" />
 </a>
 
-# Yōkai
+# Esoteric
 
 </div>
 
@@ -24,18 +24,16 @@ A free and open source manga reader
 
 ## Download
 
-[![Yokai Stable](https://img.shields.io/github/v/release/null2264/yokai?maxAge=3600&label=Stable&labelColor=06599d&color=043b69&filter=v*)](https://github.com/null2264/yokai/releases)
-[![Yokai Nightly](https://img.shields.io/github/v/release/null2264/yokai-nightly?maxAge=3600&label=Nightly&labelColor=2c2c47&color=1c1c39&filter=r*)](https://github.com/null2264/yokai-nightly/releases)
+To be determined
 
 *Requires Android 6.0 or higher.*
 
 ## About Fork
 
-This fork was created for personal usage, the name Yōkai is chosen in theme of my "paranormal" fork collection, all of them are made for personal purposes, to explore the language used to made them, explore new tech, or simply want to add my own twists that may not accepted by upstream as a PR.
+This fork was created for my own niche use, hence the name "Esoteric". I wanted to be able to have multi-device sync without the use of third party apps, which came to be.
+There isn't much planned, other than just normal upstream merges and updates and whatnot, but I liked the J2K fork and wanted to add my own components to it.
 
-Updates are sporadic, sometime fast, sometime slow.
-
-As of the time of writing, this fork is currently focusing on migrating to a much more modern infrastructure, some features may be added, but most changes are happening behind the scene.
+Updates won't be consistent, I'm literally just doing this for my own usage lol
 
 ## Features
 
